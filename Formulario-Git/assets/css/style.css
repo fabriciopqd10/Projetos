@@ -18,7 +18,7 @@ body {
 
 .container {
     width: 80%;
-    height: 90%;
+    height: 80%;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
 }
@@ -197,7 +197,7 @@ body {
 @media screen and (max-width: 868px) {
     .container {
         width: 90%;
-        height: auto;
+        height: 80%;
     }
 
     .input-group {
