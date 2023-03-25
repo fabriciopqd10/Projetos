@@ -240,16 +240,19 @@ body {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media (min-width:320px) and (max-width: 1000px) {
     .form-header {
+      margin-top: 200px;
+    }
+
+    .continue-button {
+      margin-bottom: 50px;
+    }
+
+    .container {
       margin-top: 200px;
     }
   
 }
 
-@media screen and (max-width: 480px) {
-  .continue-button {
-    margin-bottom: 50px;
-  }
 
-}
