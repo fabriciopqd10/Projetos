@@ -220,3 +220,36 @@ body {
         margin-top: 0.5rem;
     }
 }
+
+
+
+@media (min-width:320px) and (max-width:600px) {
+
+  .container {
+    width: 500px;
+    margin-top: 200px;
+    height: 700px;
+  }
+
+  .title {
+    font-size: 1em;
+  }
+
+   .login-button {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+    .form-header {
+      margin-top: 200px;
+    }
+  
+}
+
+@media screen and (max-width: 480px) {
+  .continue-button {
+    margin-bottom: 50px;
+  }
+
+}
