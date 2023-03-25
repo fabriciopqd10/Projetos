@@ -10,7 +10,7 @@
 body {
     background-image: linear-gradient(to right, #E6DADA, #2f4f57);
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,7 @@ body {
 
 .container {
     width: 80%;
-    height: 80%;
+    height: 100%;
     display: flex;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
 }
@@ -197,7 +197,7 @@ body {
 @media screen and (max-width: 868px) {
     .container {
         width: 90%;
-        height: 80%;
+        height: 20%;
     }
 
     .input-group {
@@ -239,20 +239,4 @@ body {
     margin-top: 100px;
   }
 }
-
-@media (min-width:320px) and (max-width: 1000px) {
-    .form-header {
-      margin-top: 200px;
-    }
-
-    .continue-button {
-      margin-bottom: 50px;
-    }
-
-    .container {
-      margin-top: 200px;
-    }
-  
-}
-
 
