@@ -8,8 +8,8 @@
 
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -19,12 +19,14 @@ html, body {
    
 }
 
+
 header {
-    padding: 20px 0;
+    padding: 40px;
     background-image: linear-gradient(to bottom, #2fa866, #063d1e);
     color: #ffff;
     text-align: center;
     box-shadow: 0px 7px 9px black;
+    
 }
 
 .texto h1 {
@@ -68,11 +70,25 @@ nav a:hover {
 }
 
 main {
-    width: 700px;
+    max-width: 700px;
+    min-width: 320px;
     background-color: #ffffff;
     margin: auto;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main img {
+    width: 100%;
+}
+
+.pequena {
+    display: block;
+    margin: auto;
+    max-width: 350px;
 }
 
 article h1 {
@@ -95,3 +111,88 @@ article h2 {
     text-align: justify;
     text-indent: 30px;
 }
+
+.video {
+    position: relative;
+    background-color: black;
+    margin: 0px -20px 30px -20px;
+    padding-top: 60%;
+}
+
+iframe {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 95%;
+}
+
+aside {
+    background-color:#83e1ad;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+aside h3 {
+    padding: 10px;
+    background-color:#1a5c37; 
+    margin: -10px -10px 0px -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #ffffff;
+}
+
+aside ul {
+    list-style: '✔️\00A0\00A0' ;
+    list-style-position: inside;
+    columns: 2;
+}
+
+footer {
+    background-color: #063d1e;
+    color: #ffff;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 10px;
+}
+
+footer a {
+    color: #ffff;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.1em;
+}
+
+footer a:hover {
+    color: #2fa866;
+    text-decoration: underline;
+}
+
+.externo {
+    background-color: #2fa866;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.externo:hover {
+    background-color: #063d1e;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+a.externo::after {
+    content: '\00A0🔗';
+}
+
+strong {
+    padding: 5px;
+    background-image: linear-gradient(to right, #66ac85, #ffff);
+}
+@media (min-width:300px) and (max-width:507px) {
+    nav {
+        flex-direction: column;
+        font-size: 1.3em;
+    }
+}
+
